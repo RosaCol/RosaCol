@@ -1,0 +1,13 @@
+
+#include <iostream>
+using namespace std;
+
+	int main()
+	{
+	Float x;
+	cin>>x;
+	cout <<"ordenar e indicar el número mayoor"<<endl;
+	cout <<x<<"Es negativo"<<endl;
+
+	return 0;
+}
