@@ -3,17 +3,24 @@ using namespace std;
 int main ()
 {
 
-  float x;
-  ifloat I;
-  float P;
-  float M;
+   float preciounidades;
+  float iva;
+  float  bruto;
+  float descuento;
+  float total;
 
-cin>>x;
-cout<<"¿Cuantas unidades son?"<<endl;
-cout <<"Calcular el IVA (I) es de 15 por 100"<<endl;
-cout<<"Calcular el PRECIO BRUTO (precio venta más IVA)"<<endl;
-cout<<"Si es mayor que 50.000, se realiza un descuento del 5 por 100"<<endl;
-cout<<"Resultado"<<endl;
+cin>>preciounidades;
+
+iva=preciounidades/100*15;
+bruto= iva + preciounidades;
+descuento = bruto /100*5;
+total= bruto - descuento;
+
+if(bruto>=50000){
+cout<<"Precio es:"<<total<<endl;
+}
+else
+cout<<"Precio es:"<<bruto<<endl;
 
 return 0;
 }

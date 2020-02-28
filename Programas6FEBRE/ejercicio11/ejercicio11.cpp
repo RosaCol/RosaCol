@@ -1,18 +1,19 @@
-
 #include <iostream>
 using namespace std;
-int main ()
-{
 
-int N;
-int C;
-int R;
+int num = 0;
 
-cout<<"N, los números se almacenan"<<endl;
-cout<<"C, contador para 100 números"<<endl;
-cout<<"R, mostrar el resultado"<<endl;
+void contador (){
+    for (int i = 0; i < 100; i++)
+    {
+        num = num + 1;
+        cout<<num<<endl;
+    }
+return;   
+}
 
-
-
+int main(){
+    cout<<"El contador"<<endl;
+    contador();
 return 0;
 }

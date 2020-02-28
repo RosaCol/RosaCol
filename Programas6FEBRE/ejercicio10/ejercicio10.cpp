@@ -1,16 +1,29 @@
-
 #include <iostream>
 using namespace std;
-int main ()
-{
 
-int N;
-int M;
-int C;
+int num = 0;
+int mul = 0;
+int tmp = 1;
+int i;
 
-cout<<"N, almacenar las variables ingresadas"<<endl;
-cout<<"M, calcular los múltiplos de 4"<<endl;
-cout <<"C, es un contador"<<endl;
+void ingreso (){
+    cin>>num;
+return;
+}
 
+void ciclo (){
+    ingreso();
+    cout<<"Los múltiplos son:"<<endl;
+    for (i = 0; i < num; i++)
+    {
+        mul = 4 * tmp++;
+        cout<<mul<<endl;
+    }
+return;
+}
+
+int main(){
+    cout<<"Ingrese la cantidad de múltiplos de 4 que desee"<<endl;
+    ciclo();
 return 0;
 }

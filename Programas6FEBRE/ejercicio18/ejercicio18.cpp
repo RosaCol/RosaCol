@@ -1,13 +1,23 @@
-
 #include <iostream>
 using namespace std;
-int main ()
-{
+int main(){
+   int div=1,divis =0,num=0;
 
-int N;
+         cout<<"Ingrese numero"<<endl;
+         cin>>num;
+for(divis=1;divis<(num+1);divis++){
 
-cout<<"Se determina por el residuo, si es 1 es par pero si es 0 es impar"<<endl;
+         if(num%divis==0){
+             div++;
+            }
+}
 
+if(div!=2){
+         cout<<"No es Primo"<<endl;;
+}
 
-return 0;
+else{
+         cout<<"Es Primo"<<endl;
+}
+    return 0;
 }

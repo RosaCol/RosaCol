@@ -1,18 +1,18 @@
-
 #include <iostream>
+#include <cstdlib>
 using namespace std;
-	int main()
-{
-	int x;
-	int y;
-	cin>>x;
-	cout<<"determinar si los números son pares comprendidos de 20 y 400"<<endl;
-	cout<<"suma"<<x<<endl;
+int main(){
+	int Su;
+	int Mu;
+        int i;
 
-	cin>>y;
-	cout<<"multiplicación"<<y<<endl;
-
-	return 0;
-
+for(i=20;i<=400;i+=2){
+	Su= Su + i;
+	Mu= Mu + i;
 }
 
+cout<<"Suma es: "<<Su<<endl;
+cout<<"Producto es: "<<Mu<<endl;
+return 0;
+
+}

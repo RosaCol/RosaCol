@@ -1,12 +1,17 @@
-
 #include <iostream>
+#include <cstdlib>
 using namespace std;
-int main ()
-{
+int main(){
+	int Suma=0;
+        int i;
 
-int I;
-cout<<"Suma de los números pares del 2 al 100"<<endl;
-cout<<"El valor es 0"<<endl;
+for(i=2;i<=100;i+=2){
+	Suma= Suma + i;
+	
+}
+
+cout<<"La suma es: "<<Suma<<endl;
 
 return 0;
+
 }

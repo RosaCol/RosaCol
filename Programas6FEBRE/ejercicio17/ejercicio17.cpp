@@ -1,19 +1,36 @@
-
 #include <iostream>
 using namespace std;
-int main ()
-{
 
-int S;
-int O;
-int Se;
-int N;
+int nu = 0;
+int num = 0;
+int su = 0;
 
-cout<<"N, números guardados"<<endl;
-cout<<"S, suma"<<endl;
-cout<<"Se, secuencia de un grupo de números enteros"<<endl;
-cout<<"O, determinar si están ordenados"<<endl;
+void registro (){
+    cin>>nu;
+return;
+}
 
+void ciclo (){
+    for (int i = 0; i < 10; i++)
+    {
+        registro();
+        if (nu > num)
+        {
+            num = nu;
+            su = num + su;
+        }
+        else
+        {
+            cout<<"La suma no se podrá hacer porque los números que ingresaste no están ordenados"<<endl;
+            return;
+        }        
+    }
+return;    
+}
 
+int main(){
+    cout<<"Ingrese 10 números enteros"<<endl;
+    ciclo();
+    cout<<"La suma de sus números es: "<<su<<endl;
 return 0;
 }

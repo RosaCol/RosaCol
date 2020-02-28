@@ -1,21 +1,23 @@
 #include <iostream>
 using namespace std;
-int main ()
-{
+int main(){
+int Pa=0;
+int In=0;
+int i;
 
-int Sp;
-int Si;
-int Np;
-int Ni;
-int C;
+for(i=1; i<=200; i++){
 
-cout<<"Sp, Suma de los números pares"<<endl;
-cout<<"Si, suma de los números impares"<<endl;
-cout<<"Si el residuo es 1 es número par"<<endl;
-cout<<"Si el residuo es 0 es número impar"<<endl;
-cout<<"Contador que va del 1 al 200"<<endl;
-
-
-return 0;
+        if (i%2==0){
+        Pa= Pa + i;
+        }
+        else{
+        In= In + i;
+        }
 }
 
+cout<<"Los pares son: "<<Pa<<endl;
+cout<<"Los impares son: "<<In<<endl;
+
+return 0;
+
+}

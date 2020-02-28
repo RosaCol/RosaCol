@@ -1,17 +1,19 @@
-
-
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main ()
+
+
+int main()
 {
+float media=0;
+int numero=0;
+int i;
 
-int N;
-int S;
-int M;
+for(i=1; i<=50;i++)
+{
+numero= numero + i;
+}
+media= numero/50;
 
-cout<<"N, los 50 números ingresados"<<endl;
-cout<<"S, la suma de los 50 números"<<endl;
-cout<<"M, la media de los 50 números"<<endl;
-
+cout<<"La media es:"<<media<<endl;
 return 0;
 }

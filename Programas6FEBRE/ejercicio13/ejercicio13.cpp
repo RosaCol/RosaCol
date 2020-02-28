@@ -4,15 +4,21 @@ using namespace std;
 int main ()
 {
 
-int M;
-int N;
-int P;
-int C;
+float suma = 0;
+float nota = 0;
+float contar = 0;
 
-cout<<"M, media de las notas"<<endl;
-cout<<"N, número de alumnos"<<endl;
-cout<<"P,Promedio de las notas"<<endl;
-cout<<"contador de alumnos"<<endl;
+do{
+cin>>nota;
+if (nota>0){
+suma = nota + suma;
+contar = contar + 1;
+}
+}
+while(cin);
+
+cout<<"Nota media es: "<<(suma/contar)<<endl;
+
 
 return 0;
 }

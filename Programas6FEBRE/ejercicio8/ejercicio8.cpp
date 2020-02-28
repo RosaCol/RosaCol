@@ -1,35 +1,42 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main ()
+int main()
 {
+int a,b,c,d,e,f,g,h,i,j;
+cout<<"Introduce 10 números";
+cin>>a >> b >>c >> d >> e >> f >> g >>h>>i>>j;
 
-int A; 
-int B; 
-int C;
-int D;
-int E;
-int F;
-int G;
-int H;
-int I;
-int J; 
-
-cin>>A;
-cin>>B;
-cin>> C;
-cin>>D;
-cin>>E;
-cin>>F;
-cin>>G;
-cin>>H;
-cin>>I;
-cin>>J;
-
-cout<<"Suma los 10 números"<<endl;
+cout<< "La suma de los 10 números introducidos por teclado es: \n"<<endl;
+cout<< (a + b + c + d + e + f + g + h + i+ j)<<endl;
 
 
 return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
