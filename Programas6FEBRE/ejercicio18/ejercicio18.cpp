@@ -1,23 +1,16 @@
-#include <iostream>
+//ejercicio 18
+#include<iostream>
 using namespace std;
+
 int main(){
-   int div=1,divis =0,num=0;
+int num=0;
 
-         cout<<"Ingrese numero"<<endl;
-         cin>>num;
-for(divis=1;divis<(num+1);divis++){
-
-         if(num%divis==0){
-             div++;
-            }
+cout<<"Introduzca un numero es: ";cin>>num;
+if(num%2==1){
+cout<<"El numero es primo";
 }
-
-if(div!=2){
-         cout<<"No es Primo"<<endl;;
-}
-
 else{
-         cout<<"Es Primo"<<endl;
+cout<<"El numero no es primo";
 }
-    return 0;
+return 0;
 }
